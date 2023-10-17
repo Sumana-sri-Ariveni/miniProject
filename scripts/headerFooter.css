@@ -1,0 +1,301 @@
+ .clgimg{
+    height: 60px;
+    width: 60px;
+}
+
+.navbar-nav .nav-link {
+    color: whitesmoke !important;
+    font-size : 19px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: orange !important;
+}
+
+.footer{
+    color: gainsboro;
+    font-size: 1em;
+}
+
+ion-icon{
+    height: 3vh;
+    width: 3vh;
+    margin: 20px;
+    color: antiquewhite;
+}
+
+/* .hostel,.selection{
+    width: 100%;
+    margin: 2vh;
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+}
+
+.flors{
+    margin: 5vh;
+    padding: 3vh;
+    width: fit-content;
+    background-color: rgb(213, 222, 233);
+} */
+
+/* .rooms{ 
+    display: flex;
+    justify-content: space-evenly;
+    width: fit-content;
+    margin: 1vh;
+    background-color: gray;
+    padding: 1vh;
+}
+
+.bed{
+    border-radius: 10px;
+    margin: 1vh;
+    height: 6vh;
+    width: 6vh;
+} */
+
+label{
+    font-weight: 600;
+}
+
+/* .occupied{
+    background-color: red;
+}
+
+.selected{
+    background-color: yellowgreen;
+}
+
+.hosteloptions,.floorOptions{
+    margin-top: 2vh;
+    padding-left: 2vh;
+} */
+
+.payButtion{
+    display: flex;
+    justify-content: center;
+}
+
+.pay{
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    height: 10vh;
+    width: 25vh;
+    margin-bottom: 10vh;
+}
+
+/* .complaintButtion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3vh;
+} */
+
+/* index page css */
+.maincontent{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-button {
+    background-color: red;
+    color: #ffffff;
+    font-size: 1.5vw;
+    font-weight: bold;
+    font-family: "Roboto";
+    height: 3vw;
+    width: 12vw;
+    border-width: 0px;
+    padding: 0.40vw 0 0 2.25vw;
+    margin:  1.5vw 2vw 0vw 5vw;
+    border-radius: 30px;
+}
+
+.custom-button a {
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+.clgimg{
+    height: 60px;
+    width: 60px;
+}
+
+.footer{
+    color: gainsboro;
+    font-size: 1em;
+}
+
+ion-icon{
+    height: 3vh;
+    width: 3vh;
+    margin: 20px;
+    color: antiquewhite;
+}
+
+.payButtion{
+    display: flex;
+    justify-content: center;
+}
+
+.pay{
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    height: 10vh;
+    width: 25vh;
+    margin-bottom: 10vh;
+}
+.complaintButtion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3vh;
+}
+
+/* css for payments page */
+.paymentsContent{
+    height: 500px;
+    width: 100%;
+    background-color: lavender;
+    padding : 30px;
+}
+
+.main-head{
+    text-align: center;
+    color : navy;
+}
+
+.details1{
+     text-align :center;
+     padding : 20px;
+}
+ 
+.details2{
+    padding : 20px;
+}
+
+.payment-title{
+    background-color: green;
+    color : whitesmoke;
+    margin : 0;
+    padding : 2vh;
+}
+
+.payment-content{
+    font-size :  20px;
+    margin : 0 0 0 1.5vw;
+}
+
+.content{
+    padding : 0px;
+    height : 30vh;
+    top : 2vw;
+    margin : 0 0 0 7vw;
+    background-color:seashell;
+}
+
+
+
+/* css for online recipts page*/
+.ReciptsContent{
+    height : 500px;
+    width : 100%;
+    background-color: lavender;
+    padding : 30px;
+}
+
+.receipts-head{
+    text-align: center;
+    color : navy;
+    font-size : 30px;
+}
+
+.receipts-content{
+    padding : 50px;
+    font-size :  20px;
+    text-align: center;
+}
+
+/* notAlloted page mainContent css */
+
+.mainContent{
+    background-color: lavender;
+}
+
+.girlsHostelSelectormainContent{
+    background-color: lavenderblush;
+}
+
+/* bookHostel css */
+/* .formContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7vw;
+}
+
+.input{
+    padding: 5px;
+}
+
+.bookButton{
+    height: 60px;
+    width: 200px;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+} */
+
+/* Style the form container */
+.formContainer {
+    text-align: center;
+    padding: 6px;
+    margin-top: 10vh;
+}
+  
+  /* Style the form */
+.form {
+    display: inline-block;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+}
+  
+  /* Style labels */
+.label {
+    display: block;
+    margin-bottom: 5px;
+}
+  
+  /* Style input fields */
+.input input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+  
+  /* Style the submit button */
+.bookButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+  /* Adjust input and label spacing */
+.input {
+    margin: 10px 0;
+}

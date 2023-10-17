@@ -1,0 +1,13 @@
+{
+    "type": "service_account",
+    "project_id": "hostelmanagement-2f1d4",
+    "private_key_id": "339ae301728f97dfac08fa0896080a60b78ee4fc",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDAURJ4MleMWzSF\nZ157IrdgF6nd/TcsLxZNFm3RJfZ6ttarmd3cYZge40cjdTiNVMc6El1mZ8kVkifG\nDnZT4KxynMrNyxrzC+MuN+QlGXm2HQWM9Hi52q8kXTcMj1+Qb18xX1kfRrMDiEjJ\nL3GW6bb6RttOxmzU/O+ixmreJqihfqRvdtVNLltQfTPov3CDQdqC5AB8No58im0E\nKmitFC1bePB91tPiywiagSWL7ww5XdHZUnr/ZxRYSucSP/q+6dk3p9VZrt6lmiCD\nxFEapDOQqQVGojfEiHSHN5fc4gI2f/Dei4+EZDrqLLX34jxowZ2o/WTl/Bmy1YNw\nOsN3ygY7AgMBAAECggEAAbBG1Bh9D7ptR6Dd3TgPGdctoqTF9GKA4ns/XL0KTrPP\ntG6V/vaDQ2tO4JhAmt0TIHSMQNKAdqG8v6omjq365+2SykhbZMpYyXH1VABZQvHN\nJYhCRNHGKQwmMU130w1nSSOxLlke2mdfXDu2+wlhKDKMyUKRUzRHn4JB6ockXi/D\nHtFjwNYD3UFUauwpxDmY+wHJk9CegYYpptdtNb+U1FDb7YfyKFNOLLf4S4oVFF0E\nxjDcyYJaItPuKF7FRlmSggzeStDozxTXprArw/l7u5W4EV0xxpig+ACiW0ntElNm\n8dY+Ci6D/47QCn7hKc7Gsi8D9YQXLgZTa10qFmq0YQKBgQD7eSI6wKB0F9UKDcyy\n9+7NhBUdHVI/y7UWaP0QFzYQxaps62dZc1AayzdaH+5TqE3AiJiZ58re8LTKaMe+\n1oczPQhjn5PqB6b8Et9UsYpN3U2yAWJz67Ft0rpwQTaA9txHW7vlALv/ydNxoU97\nC1Mw/A5+MDjfbNOgGl/NbmD39QKBgQDDx1O2y1Kczh2hvC7wNzTFSlnw5OfZ0A8o\np2iOd0NqbCBDt1qEOrbUYILMJg0oGSd1Ukk0sUm+qsxUtgWchX+AhbRkZMnFlx0k\n53C7hQSsR68eSsnvaXBCrKhW7Wc2pmNJoIkMM1SjtJRsr4WwBsTju2zN0G8GfQMG\nbb8dHmmXbwKBgQCOkmrZrIRLzYc3IAPCI9b8Jbpiu1D6Yl/UyMlQ6hf5AlhRUFVT\n3ZC44CYNrrTMMUuDsO3zs/rM0uNtLmKwy6fzYNL0yHBv6s69c2Wy+sVSx/lYxngv\nCJ2bijGxmwdvroXM3zFz8CqmJqL+dVo+hHkx+HWvDV/xLB3/U3SlX8MSUQKBgDTz\nKxwMP6qzQGZm3BcSB064vjyd3GsXj5ICPRATB4O3/L3z0CJlMt+bvqRyQiqvKvHb\nMHt026oazaq3lCryHDrpbpGchMnRBgveIKpG3q2tsZoyxgzfaoJN6jWgfcLVG5Nl\nPMu08lZYV7BRhInIOuYQ4euETRLnKrNJaV/5wrs3AoGAHf++9i8RNw+bGrldiZk3\n7e4G91IHY48BLr11vhVvvxRgMtd53QqSSAHM0pUR7yVcdRSw/Yf2EIJ2hFKJU/jB\nS9ZVAxrVy5OmoUUspWG8ftydm03R2qJkw7QvLFTTpiX/MrjEd8totMA2651vUSTB\nVShYcLzgeQ5elVWA646RYG8=\n-----END PRIVATE KEY-----\n",
+    "client_email": "firebase-adminsdk-cacvt@hostelmanagement-2f1d4.iam.gserviceaccount.com",
+    "client_id": "111648858400853766534",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-cacvt%40hostelmanagement-2f1d4.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }

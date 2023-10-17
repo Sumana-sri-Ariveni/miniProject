@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ /* Apply background color to the body */
+ body {
+    background-color: lightblue;
+ }
+ 
+ /* Style the container */
+ .container {
+    margin-top: 10rem;
+    margin-left : 3rem;
+ }
+ 
+ /* Style the heading */
+ .text-center {
+    text-align: center;
+ }
+ 
+ /* Style the alert box */
+ .alert {
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    max-width: 700px;
+    padding: 20px;
+    background-color: #dff0d8; /* Use a Bootstrap-like success color */
+    border: 1px solid #3c763d; /* Use a Bootstrap-like border color */
+    border-radius: 4px;
+ }
+ 
+ /* Style the alert heading */
+ .alert-heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+ }
+ /* Style the "Submit Another Complaint" button */
+ .btn-danger {
+     background-color:cornflowerblue; /* Primary blue color */
+     border-color:crimson;
+     border-radius: 25px; /* Rounded corners for the button */
+     margin-top : 3vw;
+     margin-left : 40vw;
+     color : white;
+     border-radius: 5px; /* Rounded corners */
+     padding: 10px 20px; /* Add some padding to the button */
+     cursor: pointer; /* Add a pointer cursor on hover */
+     transition: background-color 0.3s; /* Smooth background color transition on hover */
+ }
+ 
+ /* Change button color on hover */
+ .btn-danger:hover {
+     background-color: red; 
+     border-color: red;
+ 
+     /* Darker red on hover */
+ }
+ 
+ 
+ /* Style the submitted data */
+ #submittedName,
+ #submittedRoom,
+ #submittedComplaint {
+    font-weight: bold;
+ }

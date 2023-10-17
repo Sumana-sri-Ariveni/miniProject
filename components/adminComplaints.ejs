@@ -1,0 +1,42 @@
+<style>
+    .mainDetails{
+        width: 100%;
+        background-color: lightgray;
+    }
+
+    h2{
+        background-color: gainsboro;
+        color: black;
+        justify-content: center;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+    }
+
+    .details{
+        margin: 2vw;
+        width: 90%;
+        padding: 2vw;
+        border-radius: 10px;
+        background-color: rgb(23, 22, 22);
+        color: white;
+    }
+
+    .p{
+        color: red;
+    }
+</style>
+<%- include('adminNavBar')%>
+<div class="mainDetails">
+    <h2>Complaints</h2>
+    <% for (let i = 0; i < complaintsData.length; i++) { %>
+        <div class="details">
+            <strong>User Name:</strong> <%=complaintsData[i].userName %><br>
+            <strong>Hostel Name:</strong> <%=complaintsData[i].hostelName %><br>
+            <strong>Hostel Floor:</strong> <%=complaintsData[i].hostelFloor %><br>
+            <strong>Hostel Room:</strong> <%=complaintsData[i].hostelRoom %><br>
+            <p class="p"><strong style="color: white;">Complaint:</strong> <%=complaintsData[i].complaint %><br></p>
+        </div>
+    <% } %>
+</div>
+
+<%- include('footer')%>

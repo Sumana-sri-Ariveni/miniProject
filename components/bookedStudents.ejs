@@ -1,0 +1,34 @@
+<style>
+    .mainDetails{
+        width: 100%;
+        background-color: lightgray;
+    }
+
+    h2{
+        background-color: gainsboro;
+        color: black;
+        justify-content: center;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+    }
+
+    .details{
+        margin: 2vw;
+        width: 90%;
+        padding: 2vw;
+        border-radius: 10px;
+        background-color: rgb(23, 22, 22);
+        color: white;
+    }
+</style>
+<div class="mainDetails">
+    <h2>Booking Details</h2>
+    <% for (let i = 0; i < bookingData.length; i++) { %>
+        <div class="details">
+            <strong>User Name:</strong> <%=bookingData[i].userName %><br>
+            <strong>Hostel Name:</strong> <%=bookingData[i].hostelName %><br>
+            <strong>Hostel Floor:</strong> <%=bookingData[i].hostelFloor %><br>
+            <strong>Hostel Room:</strong> <%=bookingData[i].hostelRoom %><br>
+        </div>
+    <% } %>
+</div>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+    <link rel="stylesheet" href="adminSignup.css">
+    <!-- Add this to your <head> section -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Add this to your <head> section -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <title>adminsignup</title>
+</head>
+<body>
+    <div class="row headimg">
+        <img class="headerFooterImg"src="vishnuLogo.jpg" alt="img" class="">  
+    </div>
+    <div class="login">
+        <img src="adminLoginBackground.jpg" alt="image" class="login__bg">
+    <form method="post" action="adminSignup" class="login__form">
+        <h1>Admin Signup</h1>
+        <label for="adminUserName">User Name:</label>
+        <input type="text" id="adminUserName" name="adminUserName" class="login__input" required><br><br>
+        
+        <label for="adminFor">Admin For:</label>
+        <input type="text" id="adminFor" name="adminFor" class="login__input" required><br><br>
+        
+        <label for="adminPhoneNumber">Phone Number:</label>
+        <input type="tel" id="adminPhoneNumber" name="adminPhoneNumber" class="login__input" required><br><br>
+        
+        <label for="adminSignupPassword">Password:</label>
+        <input type="password" id="adminSignupPassword" name="adminSignupPassword" class="login__input" required><br><br>
+
+        <input type="submit" value="Sign Up" class="login__button">
+    </form>
+</div>
+<div class="row">
+ <img class="headerFooterImg" src="footer.gif" alt="img" class="w-100">
+</div>
+</body>
+</html>

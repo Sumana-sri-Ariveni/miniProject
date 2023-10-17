@@ -1,0 +1,92 @@
+<style>
+    body {
+  background-color:#D0D4CA;
+  color: whitesmoke;
+}
+.maincontent {
+  max-width: 1200px;
+ 
+}
+
+.studentDetails{
+  text-align :center;
+}
+
+.container{ 
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+  background-color:#232D3F;
+  border-radius: 20px;
+}
+ 
+.fields {
+  margin-bottom: 5px;
+}
+
+.logout{
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 4px;
+  display: inline-block;
+  text-align: center;
+  color:ivory;
+  background-color: maroon;
+  border: 2px solid crimson;
+  transition: all 200ms linear;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  transform: translate3d(0, 0, 30px) perspective(100px);
+}
+
+.logout:hover {
+  color: whitesmoke;
+  background-color: red ;
+  border-color: crimson;
+}
+</style>
+
+<div class="container main">
+<div class="maincontent">
+    <div class="studentDetails">
+        <!-- <img src="#" alt="studentImage"> -->
+        <div class="fields">
+            <p><h4>USER NAME </h4> <%= userName%></p>
+        </div>
+        <div class="fields">
+            <p><h4>STUDENT NAME</h4> <%= studentName%></p>
+        </div>
+        <div class="fields">
+            <p><h4>STUDENT DATE OF BIRTH</h4> <%= studentDateofbirth%></p>
+        </div>
+        <div class="fields">
+            <p><h4>STUDENT PHONE NUMBER</h4> <%= studentPhoneNumber%></p>
+        </div>
+        <div class="fields">
+          <p><h4>STUDENT STREAM</h4> <%= studentStream%></p>
+        </div>
+        <div class="fields">
+          <p><h4>STUDENT BRANCH</h4> <%= studentBranch%></p>
+        </div>
+        <div class="fields">
+          <p><h4>STUDENT YEAR</h4> <%= studentYear%></p>
+        </div>
+        <div class="fields">
+            <p><h4>FATHER NAME</h4> <%= studentFatherName%></p>
+        </div>
+        <div class="fields">
+            <p><h4>FATHER MOBILE NUMBER</h4> <%= studentFatherNumber%></p>
+        </div>
+        <div class="fields">
+            <p><h4>MOTHER NAME</h4> <%= studentMotherName%></p>
+        </div>
+        <div class="fields">
+            <p><h4>MOTHER MOBILE NUMBER</h4> <%= studentMotherNumber%></p>
+        </div>
+        <div class="d-flex flex-row custom-button">
+            <a href="logout" class="logout-button">LOGOUT</a>
+        </div>
+    </div>
+</div>
+</div>

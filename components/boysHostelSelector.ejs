@@ -1,0 +1,32 @@
+<div class="mainContent">
+<div class="hosteloptions">
+    <div class="hosteloptions">
+        <label for="hostelnames">SELECT HOSTEL</label>
+        <select id="myDropdown" onchange="updateContent()">
+            <option value="ASR">ASR</option>
+            <option value="VSR">VSR</option>
+            <option value="VVK">VVK</option>
+        </select>
+        <div id="contentContainer">
+            <!-- Content will be dynamically updated here -->
+            <%- include('asrHostel')%>
+        </div>
+    </div>
+    <script>
+        function updateContent() {
+            var dropdown = document.getElementById("myDropdown");
+            var selectedValue = dropdown.value;
+            // Make an AJAX request to load the selected content
+            fetch(`/render-boyshostel?selectedOption=${selectedValue}`)
+                .then(response => response.text())
+                .then(content => {
+                    // Update the content container with the retrieved content
+                    document.getElementById("contentContainer").innerHTML = content;
+                })
+                .catch(error => {
+                    console.error("Error loading content:", error);
+                });
+        }
+    </script>    
+</div>
+</div>

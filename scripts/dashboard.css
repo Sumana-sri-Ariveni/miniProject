@@ -1,0 +1,200 @@
+body {
+    background-color: white;
+    background-size: cover;
+    width: 100vw;
+    margin : 0;
+}
+
+.main-para{
+    font-size: 15px;
+    font-style: Robosto;
+    color: white;
+    background-color: red;
+ }
+
+.main-head{
+    background-color: white;
+   
+ }
+
+.wrapper {
+    width: 100vw;
+    background-color: white;
+    background-size: cover;
+}
+
+.dash-logo {
+    margin-top : 35px;
+  
+}
+
+.accred{
+    color:grey;
+     font-size:13.5px; 
+}
+
+.naac{
+    color:red;
+     font-size:13.5px
+}
+
+.nba{
+    color:red; 
+    font-size:13.5px;
+}
+
+.sub-nav {
+    margin: 20px -10px 0 0;
+    font-size: 34px;
+}
+
+.sub-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding-right: 20px;
+}
+
+.main-dropdown{
+    margin-top : 60px;
+    margin-left: 40px;
+}
+
+.dropdown1,
+.dropdown2,
+.dropdown3 {
+    text-decoration: none;
+    margin-left: 10px;
+}
+.custom-button {
+    background-color: red;
+    color: #ffffff;
+    font-size: 1.5vw;
+    font-weight: bold;
+    font-family: "Roboto";
+    height: 3vw;
+    width: 12vw;
+    border-width: 0px;
+    padding: 0.40vw 0 0 2.25vw;
+    margin: 8px;
+    /* margin:  1.5vw 0vw 0vw 5vw; */
+    border-radius: 30px;
+}
+
+.custom-button a {
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.mid-image{
+    margin-top : 15px;
+}
+.hostel-con{
+    margin-top : 50px;
+}
+.hostel-head{
+    margin-left : 0;
+    text-align: justify; /* Justify the text within the paragraph */
+}
+.image1{
+    margin-left : 15px;
+}
+.p1,
+.p2{
+    text-align: justify;
+    font-size: 15px;
+}
+.sub-con{
+    margin-top : 50px;
+}
+.sub-head{
+    font-size : 20px;
+    color :darkslategrey;
+}
+.list-rules{
+    margin-top : 20px;
+    margin-left: 0px;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.l1{
+    line-height: 2.2;
+}
+
+
+.sub2-head{
+    margin-top : 90px;
+    font-size : 35px;
+    color : black;
+}
+.sub2-para{
+    margin-top : 20px;
+    font-size : 17px;
+    color :darkslategray
+}
+
+.btn-info{
+    background-color :deepskyblue;
+}
+ 
+
+.bg-container {
+    background: white;
+}
+
+.tabs-container {
+    background-color: white;
+    border-radius: 8px;
+}
+
+.button {
+    background-color: whitesmoke;
+    color: black;
+    font-family: "Roboto";
+    font-size: 18px;
+    width: 33%;
+    border-width: 0;
+    border-radius: 8px;
+}
+
+.button.selected-button {
+    background-color: red;
+    color: white;
+}
+
+.selected-button {
+    background-color: red;
+}
+
+.tab-content {
+    width: 100%;
+    color: black;
+    background-color: white;
+    font-family: "Roboto";
+    font-size: 15px;
+    margin-left : 100px;
+}
+.last-head{
+    background-color :aliceblue;
+    color : black;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer{
+    color: gainsboro;
+    font-size: 1em;
+}
+
+ion-icon{
+    height: 30px;
+    width: 30px;
+    margin: 20px;
+    color: antiquewhite;
+}
+
+.hostelnames{
+    display: flex;
+    justify-content: center;
+}

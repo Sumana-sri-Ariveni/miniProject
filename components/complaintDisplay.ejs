@@ -1,0 +1,98 @@
+<style>
+    body{
+    background: url(https://images.unsplash.com/Ys-DBJeX0nE.JPG?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80) no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+}
+ 
+.wrapper{
+    width: 420px;
+    background: transparent;
+    border:2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    margin-left : 26.5vw;
+    box-shadow:darkblue 10px 5px 10px; 
+}
+.main-head{
+    color : white;
+}
+
+.form-label {
+    font-weight: bold;
+    font-size : 20px;
+    border-color : red;
+    font-weight: 150;
+    color: white; 
+}
+
+.form-control {
+    border-radius: 10px; 
+    max-width: 100%; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+}
+  
+.btn-primary {
+    background-color:maroon; 
+    border-color:crimson;
+    margin-top : 1vw;
+    font-size : 25px;
+    border-radius: 25px;
+    width: 100%; 
+}
+
+.btn-primary:hover {
+    background-color: red;
+    border-color: maroon;
+}
+/* textarea{
+    height: 10vw;
+    width: 10vw;
+} */
+
+.forheight{
+    height: 20vw;
+}
+
+/* .mainComplaintDisplay{
+    padding: 20px;
+    background-color: hsla(0, 2%, 41%, 0.8);
+    border: 2px solid hsla(0, 0%, 100%, 0.7);
+    margin-bottom: 2vw;
+} */
+</style>
+<div class="container mainComplaintDisplay mt-5">
+    <h1 class="text-center">Complaints</h1>
+    <div class="row">
+        <div class="col-md-6 offset-md-3 background">
+            <div class="forheight">
+                <form action="/complaint" method="post">
+                    <textarea name="complaint" style="border: 2px solid red;" class="form-control" id="complaint" rows="4" placeholder="write your complaint here" required></textarea>
+                    <div class="complaintButtion">
+                        <button id="complaintButton" type="submit" class="btn btn-danger">Submit Complaint</button>
+                    </div>
+                </form>
+            </div>
+            <h4 class="">Your complaints history</h4>
+            <div class="alert alert-success">
+                <div class="message">
+                    <%= message %>
+                </div>
+                <div>
+                    <ul>
+                        <% for (let i = 0; i < complaints.length; i++) { %>
+                            <li class="complaints">
+                                Complaint <%= i + 1 %>: <%= complaints[i] %>
+                            </li>
+                        <% } %>
+                    </ul>
+                </div>                
+            </div>
+        </div>
+    </div>
+</div>

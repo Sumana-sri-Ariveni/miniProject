@@ -1,0 +1,87 @@
+<div class="hostel">
+    <div class="flors">
+        <div class="rooms">
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+        </div>
+        <div class="rooms">
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+        </div>
+        <div class="rooms">
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+        </div>
+        <div class="rooms">
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+        </div>
+        <div class="rooms">
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+        </div>
+        <div class="rooms">
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+        </div>
+        <div class="rooms">
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+        </div>
+        <div class="rooms">
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+        </div>
+        <div class="rooms">
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+        </div>
+        <div class="rooms">
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+            <div><ion-icon class="bed" name="bed-outline"></ion-icon></div>
+        </div>
+    </div>
+</div>
+<div class="payButtion">
+    <button class="pay">Secure a bed</button>
+</div>
+<script>
+    const floor = document.querySelector('.hostel');
+    const beds = document.querySelectorAll(".rooms .bed:not(.occupied");
+    
+    function getBed(){
+        const selectedBed = document.querySelectorAll('.rooms .bed.selected');
+        console.log(selectedBed);
+        const bedIndex = [...selectedBed].map(function(bed){
+            return [...beds].indexOf(bed);
+        })
+        console.log(bedIndex);
+    }
+
+    floor.addEventListener('click',(e) =>{
+        if(e.target.classList.contains('bed') && !e.target.classList.contains('occupied')){
+            e.target.classList.toggle('selected');
+        }
+        getBed();
+    })
+</script>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Student Details Form</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="studentFamilydetails.css">
+</head>
+<body>
+    <div class="container justify-center">
+        <h2 class="main-heading">Student Details Form</h2>
+        <form method="post" action="/continueToPay">
+            <!-- Student Information -->
+            <div class="form-group">
+                <label for="userName">User Name</label>
+                <input name="userName" type="text" class="form-control" id="studentName" placeholder="Enter user name" required>
+            </div>
+            <!-- Parents' Joint Photo -->
+            <div class="form-group">
+                <h5 class="pic-1">Guardian-1 Photo</h5>
+                <label for="photo1"><img id="newavatar1" src="profile.png" alt="profile"><br></label>
+                <input name="guardian1pic" type="file" onchange="changeImage1()" id="photo1" accept="image/jpeg, image/png" hidden required>
+            </div>
+            <!-- Guardian 1 Information -->
+            <div class="form-group">
+                <label for="guardian1Name">Guardian-1 Name</label>
+                <input name="guardian1Name" type="text" class="form-control" id="guardian1Name" placeholder="Enter guardian's name" required>
+            </div>
+            <div class="form-group">
+                <label for="guardian1Phone">Guardian-1 Phone Number</label>
+                <input name="guardian1Phone" type="tel" class="form-control" id="guardian1Phone" placeholder="Enter guardian's phone number" required>
+            </div>
+             
+            <!-- Guardian 1 Relation -->
+            <div class="form-group">
+                <label for="guardian1Relation">Relation to Student (Guardian-1)</label>
+                <input name="guardian1Relation" type="text" class="form-control" id="guardian1Relation" placeholder="Enter the relation" required>
+            </div>
+            <!-- Guardian 2 Information -->
+            <div class="form-group">
+                <h5 class="pic-1">Guardian-2 Photo</h5>
+                <label for="photo2"><img id="newavatar2" src="profile.png" alt="profile"></label>
+                <input name="guardian2pic" type="file" onchange="changeImage2()" id="photo2" accept="image/jpeg, image/png" hidden required>
+            </div>
+            <div class="form-group">
+                <label for="guardian2Name">Guardian-2  Name</label>
+                <input name="guardian2Name" type="text" class="form-control" id="guardian2Name" placeholder="Enter guardian's name" required>
+            </div>
+            <div class="form-group">
+                <label for="guardian2Phone">Guardian-2 Phone Number</label>
+                <input name="guardian2Phone" type="tel" class="form-control" id="guardian2Phone" placeholder="Enter guardian's phone number" required>
+            </div>
+       
+            <!-- Guardian 2 Relation -->
+            <div class="form-group">
+                <label for="relation2">Relation to Student (Guardian-2)</label>
+                <input name="guardian2relation" type="text" class="form-control" id="relation2" placeholder="Enter the relation" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">continue to pay</button>
+        </form>
+    </div>
+    <script language="javascript">
+        function changeImage1() {
+            const imgpath1 = document.getElementById("photo1").value.split("\\");
+            document.getElementById("newavatar1").src = imgpath1[imgpath1.length-1];
+        }
+        function changeImage2() {
+            const imgpath2 = document.getElementById("photo2").value.split("\\");
+            document.getElementById("newavatar2").src = imgpath2[imgpath2.length-1];
+        }
+    </script> 
+</body>
+</html>

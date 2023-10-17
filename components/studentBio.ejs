@@ -1,0 +1,67 @@
+<style>
+    body {
+  background-color:#D0D4CA;
+  color: whitesmoke;
+}
+.maincontent {
+  max-width: 1200px;
+ 
+}
+
+.studentDetails{
+  text-align :center;
+}
+
+.container{ 
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+  background-color:#232D3F;
+  border-radius: 20px;
+}
+ 
+.fields {
+  margin-bottom: 5px;
+}
+</style>
+
+<div class="container main">
+  <div class="maincontent">
+    <% studentData.forEach(function(student) { %>
+      <div class="studentDetails">
+        <div class="fields">
+          <p><h4>USER NAME </h4> <%= student.userName %></p>
+        </div>
+        <div class="fields">
+          <p><h4>STUDENT NAME</h4> <%= student.studentName %></p>
+        </div>
+        <div class="fields">
+          <p><h4>STUDENT DATE OF BIRTH</h4> <%= student.studentDateofbirth %></p>
+        </div>
+        <div class="fields">
+          <p><h4>STUDENT PHONE NUMBER</h4> <%= student.studentNumber %></p>
+        </div>
+        <div class="fields">
+          <p><h4>STUDENT STREAM</h4> <%= student.studentStream %></p>
+        </div>
+        <div class="fields">
+          <p><h4>STUDENT BRANCH</h4> <%= student.studentBranch %></p>
+        </div>
+        <div class="fields">
+          <p><h4>STUDENT YEAR</h4> <%= student.studentYear %></p>
+        </div>
+        <div class="fields">
+          <p><h4>FATHER NAME</h4> <%= student.studentFatherName %></p>
+        </div>
+        <div class="fields">
+          <p><h4>FATHER MOBILE NUMBER</h4> <%= student.studentFatherNumber %></p>
+        </div>
+        <div class="fields">
+          <p><h4>MOTHER NAME</h4> <%= student.studentMotherName %></p>
+        </div>
+        <div class="fields">
+          <p><h4>MOTHER MOBILE NUMBER</h4> <%= student.studentMotherNumber %></p>
+        </div>
+      </div>
+    <% }); %>
+  </div>
+</div>
