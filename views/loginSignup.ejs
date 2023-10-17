@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loginpage</title>
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container main">
+    <div class="row headimg">
+      <img src="vishnuLogo.jpg" alt="img" class="w-100">  
+     </div>
+    <div class="section over-hide">
+      <div class="container box">
+          <div class="row full-height justify-content-center">
+              <div class="col-12 height">
+                  <div class="section text-center">
+                      <input class="pricing" type="checkbox" id="pricing" name="pricing"/>
+                      <label for="pricing"><span class="block-diff">LOGIN</span><span class="float-right">SIGNUP</span></label>
+                      <div class="card-3d-wrap mx-auto">
+                          <div class="card-3d-wrapper">
+                              <div class="card-front">
+                                  <div class="main-content">
+                                      <div class="login-container">
+                                        <div class="login-form">
+                                          <form action="/login" method="post">
+                                            <h3>LOGIN</h3>
+                                            <div class="input">
+                                              <ion-icon name="person-outline"></ion-icon>
+                                              <input name="loginUserName" type="text" required>
+                                              <label for="">UserName</label>
+                                            </div>
+                                            <div class="input">
+                                              <ion-icon name="lock-closed-outline"></ion-icon>
+                                              <input name="loginPassword" type="password" required>
+                                              <label for="">Password</label>
+                                            </div>
+                                            <div class="forget">
+                                              <a href="#">forget password?</a>
+                                            </div>
+                                            <button type="submit" style="border-radius: 20px;" >Login</button>
+                                          </form>
+                                        </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="card-back">
+                                  <div class="main-content">
+                                      <div class="login-container">
+                                        <div class="login-form">
+                                          <form action="/signup" method="post">
+                                            <h3>SIGNUP</h3>
+                                            <div class="input">
+                                              <ion-icon name="person-outline"></ion-icon>
+                                              <input name="signupUserName" type="text" required>
+                                              <label for="">UserName</label>
+                                            </div>
+                                            <div class="input">
+                                              <ion-icon name="call-outline"></ion-icon>
+                                              <input name="phoneNumber" type="tel" required>
+                                              <label for="">Phone number</label>
+                                            </div>
+                                            <div class="input">
+                                              <ion-icon name="lock-closed-outline"></ion-icon>
+                                              <input name="signupPassword" type="password" required>
+                                              <label for="">Password</label>
+                                            </div>
+                                            <button type="submit" style="border-radius: 20px;">Signup</button>
+                                          </form>
+                                        </div>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+      <img src="footer.gif" alt="img" class="w-100">
+    </div>
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

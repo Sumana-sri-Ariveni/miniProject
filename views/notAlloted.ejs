@@ -1,0 +1,14 @@
+<%- include("../components/header")%>
+
+<% if (booked) { %>
+    <%- include("../components/bookedHostel")%>
+<% } else { %>
+    <% if( gender == 'male') {%>
+        <%- include('../components/boysHostelSelector')%>
+    <%} else{%>
+        <%- include('../components/girlsHostelSelector')%>
+    <%}%>
+<% } %>
+
+<%- include("../components/footer")%>
+

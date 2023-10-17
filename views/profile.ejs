@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="form-container">
+        <form action="/saveProfile" method="post">
+            <h1>PERSONAL DETAILS</h1>
+            <div class="picdiv">
+                <label for="photo"><img id="newavatar" src="profile.png" alt="profile"></label>
+                <input name="studentImg" type="file" onchange="changeImage()" id="photo" accept="image/jpeg, image/png" hidden required>
+            </div>
+            <div class="inputdiv">
+                <label for="firstname">First name</label>
+                <input name="studentFirstName" type="text" id="firstname" required>
+            </div>
+            <div class="inputdiv">
+                <label for="lastname">Last name</label>
+                <input name="studentLastName" type="text" id="lastname" required>
+            </div>
+            <div class="radiobuttion">
+                <label for="">Gender</label><br>
+                <input class="radioInput" type="radio" value="male" name="gender" id="male"><label for="male">male</label><br>
+                <input class="radioInput" type="radio" value="female" name="gender" id="female"><label for="female">female</label>
+            </div>
+            <div class="inputdiv">
+                <label for="dob">Student date of birth</label>
+                <input name="studentDateOfbirth" type="date" id="dob" required>
+            </div>
+            <div class="inputdiv">
+                <label for="studentmobilenumber">Student mobile number</label>
+                <input name="studentNumber" type="text" id="studentmobilenumber" required>
+            </div>
+            <div class="inputdiv">
+                <label for="studentstream">Student Stream</label>
+                <input name="studentStream" type="text" id="studentstream" required>
+            </div>
+            <div class="inputdiv">
+                <label for="studentstream">Student Branch</label>
+                <input name="studentBranch" type="text" id="studentstream" required>
+            </div>
+            <div class="inputdiv">
+                <label for="studentstream">Student Year</label>
+                <input name="studentYear" type="text" id="studentstream" required>
+            </div>
+            <div class="inputdiv">
+                <label for="fathername">Father name</label>
+                <input name="studentFatherName" type="text" id="fathername" required>
+            </div>
+            <div class="inputdiv">
+                <label for="fathermobilenumber">Father mobile number</label>
+                <input name="studentFatherNumber" type="text" id="fathermobilenumber" required>
+            </div>
+            <div class="inputdiv">
+                <label for="mothername">Mother name</label>
+                <input name="studentMotherName" type="text" id="mothername" required>
+            </div>
+            <div class="inputdiv">
+                <label for="mothermobilenumber">Mother mobile number</label>
+                <input name="studentMotherNumber" type="text" id="mothermobilenumber" required>
+            </div>
+            <div class="buttons">
+                <button class="button" type="submit">Next</button>
+            </div>
+        </form>
+    </div>
+    <script language="javascript">
+        function changeImage() {
+            const imgpath = document.getElementById("photo").value.split("\\");
+            document.getElementById("newavatar").src = imgpath[imgpath.length-1];
+        }
+    </script>
+</body>
+</html>
